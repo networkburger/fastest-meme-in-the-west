@@ -1,0 +1,942 @@
+{
+  "version": 1,
+  "defaults": {
+    "maxLength": 200,
+    "style": { "fontFamily": "MemeFont", "fontSize": 72, "minFontSize": 28, "fontWeight": 400, "color": "#FFFFFF", "strokeColor": "#000000", "strokeWidth": 4, "align": "center", "verticalAlign": "middle", "uppercase": true, "maxLines": 2, "lineHeight": 1.05 }
+  },
+  "templates": [
+    {
+      "id": "0-days-without-lenny-simpsons",
+      "name": "0 days without (Lenny, Simpsons)",
+      "image": "templates/0-days-without-lenny-simpsons.png",
+      "thumbnail": "templates/thumbs/0-days-without-lenny-simpsons.jpg",
+      "width": 619,
+      "height": 403,
+      "provenance": {
+        "source": "https://i.imgflip.com/72epa9.png",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "without",
+          "label": "Days without…",
+          "placeholder": "A workplace accident",
+          "box": { "x": 340, "y": 100, "width": 268, "height": 112 },
+          "style": { "fontSize": 48, "minFontSize": 16, "color": "#111111", "strokeWidth": 0, "maxLines": 3 }
+        }
+      ]
+    },
+    {
+      "id": "always-has-been",
+      "name": "Always Has Been",
+      "image": "templates/always-has-been.png",
+      "thumbnail": "templates/thumbs/always-has-been.jpg",
+      "width": 960,
+      "height": 540,
+      "provenance": {
+        "source": "https://i.imgflip.com/46e43q.png",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "realisation",
+          "label": "Astronaut (front)",
+          "placeholder": "Wait, it's all Ohio?",
+          "box": { "x": 458, "y": 76, "width": 264, "height": 158 },
+          "style": { "fontSize": 46, "minFontSize": 18, "strokeWidth": 3, "maxLines": 3, "verticalAlign": "bottom" }
+        },
+        {
+          "id": "always-has-been",
+          "label": "Astronaut (gun)",
+          "placeholder": "Always has been",
+          "box": { "x": 596, "y": 4, "width": 360, "height": 56 },
+          "style": { "fontSize": 46, "minFontSize": 18, "strokeWidth": 3, "maxLines": 2 }
+        }
+      ]
+    },
+    {
+      "id": "anakin-padme-4-panel",
+      "name": "Anakin Padme 4 Panel",
+      "image": "templates/anakin-padme-4-panel.png",
+      "thumbnail": "templates/thumbs/anakin-padme-4-panel.jpg",
+      "width": 768,
+      "height": 768,
+      "provenance": {
+        "source": "https://i.imgflip.com/5c7lwq.png",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "anakin-1",
+          "label": "Anakin (top left)",
+          "placeholder": "I'm going to change the world",
+          "box": { "x": 16, "y": 264, "width": 352, "height": 104 },
+          "style": { "fontSize": 40, "minFontSize": 16, "strokeWidth": 3, "verticalAlign": "bottom" }
+        },
+        {
+          "id": "padme-1",
+          "label": "Padmé (top right)",
+          "placeholder": "For the better, right?",
+          "box": { "x": 400, "y": 264, "width": 352, "height": 104 },
+          "style": { "fontSize": 40, "minFontSize": 16, "strokeWidth": 3, "verticalAlign": "bottom" }
+        },
+        {
+          "id": "padme-2",
+          "label": "Padmé (bottom right)",
+          "placeholder": "For the better, right?",
+          "box": { "x": 400, "y": 648, "width": 352, "height": 104 },
+          "style": { "fontSize": 40, "minFontSize": 16, "strokeWidth": 3, "verticalAlign": "bottom" }
+        }
+      ]
+    },
+    {
+      "id": "ancient-aliens",
+      "name": "Ancient Aliens",
+      "image": "templates/ancient-aliens.jpg",
+      "thumbnail": "templates/thumbs/ancient-aliens.jpg",
+      "width": 500,
+      "height": 436,
+      "provenance": {
+        "source": "https://i.imgflip.com/26am.jpg",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "top",
+          "label": "Top Text",
+          "placeholder": "Top Text",
+          "box": { "x": 20, "y": 13, "width": 460, "height": 78 },
+          "style": { "fontSize": 44, "minFontSize": 18, "strokeWidth": 2 }
+        },
+        {
+          "id": "bottom",
+          "label": "Bottom Text",
+          "placeholder": "Bottom Text",
+          "box": { "x": 20, "y": 345, "width": 460, "height": 78 },
+          "style": { "fontSize": 44, "minFontSize": 18, "strokeWidth": 2 }
+        }
+      ]
+    },
+    {
+      "id": "batman-slapping-robin",
+      "name": "Batman Slapping Robin",
+      "image": "templates/batman-slapping-robin.jpg",
+      "thumbnail": "templates/thumbs/batman-slapping-robin.jpg",
+      "width": 400,
+      "height": 387,
+      "provenance": {
+        "source": "https://i.imgflip.com/9ehk.jpg",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "robin",
+          "label": "Robin",
+          "placeholder": "But what about…",
+          "box": { "x": 18, "y": 8, "width": 172, "height": 58 },
+          "style": { "fontSize": 30, "minFontSize": 12, "color": "#111111", "strokeWidth": 0, "maxLines": 3 }
+        },
+        {
+          "id": "batman",
+          "label": "Batman",
+          "placeholder": "Slap!",
+          "box": { "x": 214, "y": 8, "width": 178, "height": 66 },
+          "style": { "fontSize": 30, "minFontSize": 12, "color": "#111111", "strokeWidth": 0, "maxLines": 3 }
+        }
+      ]
+    },
+    {
+      "id": "bell-curve-midwit",
+      "name": "Bell Curve / Midwit IQ Curve",
+      "image": "templates/bell-curve-midwit.jpg",
+      "thumbnail": "templates/thumbs/bell-curve-midwit.jpg",
+      "width": 675,
+      "height": 499,
+      "provenance": {
+        "source": "https://i.imgflip.com/581ije.jpg",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "low",
+          "label": "Left (low IQ)",
+          "placeholder": "Just use a spreadsheet",
+          "box": { "x": 8, "y": 140, "width": 220, "height": 145 },
+          "style": { "fontSize": 34, "minFontSize": 12, "color": "#111111", "strokeWidth": 0, "uppercase": false, "maxLines": 4, "lineHeight": 1.15, "verticalAlign": "bottom" }
+        },
+        {
+          "id": "mid",
+          "label": "Middle (midwit)",
+          "placeholder": "No, you need a proper database with migrations and an ORM",
+          "box": { "x": 120, "y": 6, "width": 435, "height": 58 },
+          "style": { "fontSize": 30, "minFontSize": 12, "color": "#111111", "strokeWidth": 0, "uppercase": false, "maxLines": 2, "lineHeight": 1.15, "verticalAlign": "bottom" }
+        },
+        {
+          "id": "high",
+          "label": "Right (high IQ)",
+          "placeholder": "Just use a spreadsheet",
+          "box": { "x": 445, "y": 90, "width": 223, "height": 155 },
+          "style": { "fontSize": 34, "minFontSize": 12, "color": "#111111", "strokeWidth": 0, "uppercase": false, "maxLines": 4, "lineHeight": 1.15, "verticalAlign": "bottom" }
+        }
+      ]
+    },
+    {
+      "id": "bernie-sanders-once-again-asking",
+      "name": "Bernie Sanders Once Again Asking",
+      "image": "templates/bernie-sanders-once-again-asking.png",
+      "thumbnail": "templates/thumbs/bernie-sanders-once-again-asking.jpg",
+      "width": 926,
+      "height": 688,
+      "provenance": {
+        "source": "https://i.imgflip.com/3pdf2w.png",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "top",
+          "label": "Top Text",
+          "placeholder": "Top Text",
+          "box": { "x": 37, "y": 21, "width": 852, "height": 124 },
+          "style": { "fontSize": 69, "minFontSize": 28, "strokeWidth": 4 }
+        },
+        {
+          "id": "bottom",
+          "label": "Bottom Text",
+          "placeholder": "Bottom Text",
+          "box": { "x": 37, "y": 543, "width": 852, "height": 124 },
+          "style": { "fontSize": 69, "minFontSize": 28, "strokeWidth": 4 }
+        }
+      ]
+    },
+    {
+      "id": "change-my-mind",
+      "name": "Change My Mind",
+      "image": "templates/change-my-mind.jpg",
+      "thumbnail": "templates/thumbs/change-my-mind.jpg",
+      "width": 482,
+      "height": 361,
+      "provenance": {
+        "source": "https://i.imgflip.com/24y43o.jpg",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "claim",
+          "label": "Sign",
+          "placeholder": "Tabs are better than spaces",
+          "box": { "x": 220, "y": 222, "width": 190, "height": 70, "rotation": -5 },
+          "style": { "fontSize": 32, "minFontSize": 12, "color": "#1a1a2e", "strokeWidth": 0, "maxLines": 3 }
+        }
+      ]
+    },
+    {
+      "id": "disaster-girl",
+      "name": "Disaster Girl",
+      "image": "templates/disaster-girl.jpg",
+      "thumbnail": "templates/thumbs/disaster-girl.jpg",
+      "width": 500,
+      "height": 375,
+      "provenance": {
+        "source": "https://i.imgflip.com/23ls.jpg",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "top",
+          "label": "Top Text",
+          "placeholder": "Top Text",
+          "box": { "x": 20, "y": 11, "width": 460, "height": 68 },
+          "style": { "fontSize": 38, "minFontSize": 15, "strokeWidth": 2 }
+        },
+        {
+          "id": "bottom",
+          "label": "Bottom Text",
+          "placeholder": "Bottom Text",
+          "box": { "x": 20, "y": 296, "width": 460, "height": 68 },
+          "style": { "fontSize": 38, "minFontSize": 15, "strokeWidth": 2 }
+        }
+      ]
+    },
+    {
+      "id": "drake-hotline-bling",
+      "name": "Drake Hotline Bling",
+      "image": "templates/drake-hotline-bling.jpg",
+      "thumbnail": "templates/thumbs/drake-hotline-bling.jpg",
+      "width": 1200,
+      "height": 1200,
+      "provenance": {
+        "source": "https://i.imgflip.com/30b1gx.jpg",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "nah",
+          "label": "Drake: nah",
+          "placeholder": "Reading the docs",
+          "box": { "x": 630, "y": 30, "width": 540, "height": 540 },
+          "style": { "fontSize": 84, "minFontSize": 36, "color": "#111111", "strokeWidth": 0, "uppercase": false, "maxLines": 6 }
+        },
+        {
+          "id": "yeah",
+          "label": "Drake: yeah",
+          "placeholder": "Guessing until it works",
+          "box": { "x": 630, "y": 630, "width": 540, "height": 540 },
+          "style": { "fontSize": 84, "minFontSize": 36, "color": "#111111", "strokeWidth": 0, "uppercase": false, "maxLines": 6 }
+        }
+      ]
+    },
+    {
+      "id": "epic-handshake",
+      "name": "Epic Handshake",
+      "image": "templates/epic-handshake.jpg",
+      "thumbnail": "templates/thumbs/epic-handshake.jpg",
+      "width": 900,
+      "height": 645,
+      "provenance": {
+        "source": "https://i.imgflip.com/28j0te.jpg",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "left-arm",
+          "label": "Left arm",
+          "placeholder": "Frontend devs",
+          "box": { "x": 16, "y": 400, "width": 300, "height": 180 },
+          "style": { "fontSize": 56, "minFontSize": 22, "strokeWidth": 3, "maxLines": 3 }
+        },
+        {
+          "id": "right-arm",
+          "label": "Right arm",
+          "placeholder": "Backend devs",
+          "box": { "x": 500, "y": 380, "width": 380, "height": 160 },
+          "style": { "fontSize": 56, "minFontSize": 22, "strokeWidth": 3, "maxLines": 3 }
+        },
+        {
+          "id": "handshake",
+          "label": "Handshake",
+          "placeholder": "Blaming the database",
+          "box": { "x": 150, "y": 8, "width": 420, "height": 110 },
+          "style": { "fontSize": 56, "minFontSize": 22, "strokeWidth": 3, "maxLines": 2, "verticalAlign": "top" }
+        }
+      ]
+    },
+    {
+      "id": "grus-plan",
+      "name": "Gru's Plan",
+      "image": "templates/grus-plan.jpg",
+      "thumbnail": "templates/thumbs/grus-plan.jpg",
+      "width": 700,
+      "height": 449,
+      "provenance": {
+        "source": "https://i.imgflip.com/26jxvz.jpg",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "step-1",
+          "label": "Step 1 (top-left board)",
+          "placeholder": "Make a plan",
+          "box": { "x": 207, "y": 54, "width": 120, "height": 158 },
+          "style": { "fontSize": 23, "minFontSize": 11, "color": "#111111", "strokeWidth": 0, "uppercase": false, "maxLines": 5 }
+        },
+        {
+          "id": "step-2",
+          "label": "Step 2 (top-right board)",
+          "placeholder": "Execute the plan",
+          "box": { "x": 560, "y": 56, "width": 117, "height": 156 },
+          "style": { "fontSize": 23, "minFontSize": 11, "color": "#111111", "strokeWidth": 0, "uppercase": false, "maxLines": 5 }
+        },
+        {
+          "id": "step-3",
+          "label": "Step 3 (bottom-left board)",
+          "placeholder": "Unexpected consequence",
+          "box": { "x": 210, "y": 284, "width": 117, "height": 154 },
+          "style": { "fontSize": 23, "minFontSize": 11, "color": "#111111", "strokeWidth": 0, "uppercase": false, "maxLines": 5 }
+        },
+        {
+          "id": "step-4",
+          "label": "Step 4 (bottom-right board)",
+          "placeholder": "Unexpected consequence",
+          "box": { "x": 562, "y": 284, "width": 115, "height": 154 },
+          "style": { "fontSize": 23, "minFontSize": 11, "color": "#111111", "strokeWidth": 0, "uppercase": false, "maxLines": 5 }
+        }
+      ]
+    },
+    {
+      "id": "is-this-a-pigeon",
+      "name": "Is This A Pigeon",
+      "image": "templates/is-this-a-pigeon.jpg",
+      "thumbnail": "templates/thumbs/is-this-a-pigeon.jpg",
+      "width": 1587,
+      "height": 1425,
+      "provenance": {
+        "source": "https://i.imgflip.com/1o00in.jpg",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "man",
+          "label": "Man",
+          "placeholder": "Me",
+          "box": { "x": 30, "y": 1030, "width": 680, "height": 190 },
+          "style": { "fontSize": 110, "minFontSize": 44, "strokeWidth": 7, "maxLines": 2 }
+        },
+        {
+          "id": "butterfly",
+          "label": "Butterfly",
+          "placeholder": "Any bug in the code",
+          "box": { "x": 1090, "y": 470, "width": 480, "height": 250 },
+          "style": { "fontSize": 100, "minFontSize": 40, "strokeWidth": 6, "verticalAlign": "top", "maxLines": 3 }
+        },
+        {
+          "id": "question",
+          "label": "Question",
+          "placeholder": "Is this a feature?",
+          "box": { "x": 40, "y": 1235, "width": 1507, "height": 170 },
+          "style": { "fontSize": 130, "minFontSize": 52, "strokeWidth": 8, "maxLines": 2 }
+        }
+      ]
+    },
+    {
+      "id": "left-exit-12-off-ramp",
+      "name": "Left Exit 12 Off Ramp",
+      "image": "templates/left-exit-12-off-ramp.jpg",
+      "thumbnail": "templates/thumbs/left-exit-12-off-ramp.jpg",
+      "width": 804,
+      "height": 767,
+      "provenance": {
+        "source": "https://i.imgflip.com/22bdq6.jpg",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "straight",
+          "label": "Straight ahead (sign, left)",
+          "placeholder": "Doing the sensible thing",
+          "box": { "x": 195, "y": 96, "width": 110, "height": 158 },
+          "style": { "fontSize": 30, "minFontSize": 13, "strokeWidth": 0, "maxLines": 5 }
+        },
+        {
+          "id": "exit",
+          "label": "Exit (sign, right)",
+          "placeholder": "Doing the fun thing",
+          "box": { "x": 416, "y": 96, "width": 164, "height": 158 },
+          "style": { "fontSize": 32, "minFontSize": 13, "strokeWidth": 0, "maxLines": 5 }
+        },
+        {
+          "id": "car",
+          "label": "Car",
+          "placeholder": "Me",
+          "box": { "x": 255, "y": 505, "width": 320, "height": 120 },
+          "style": { "fontSize": 56, "minFontSize": 22, "strokeWidth": 3, "maxLines": 2 }
+        }
+      ]
+    },
+    {
+      "id": "marked-safe-from",
+      "name": "Marked Safe From",
+      "image": "templates/marked-safe-from.jpg",
+      "thumbnail": "templates/thumbs/marked-safe-from.jpg",
+      "width": 618,
+      "height": 499,
+      "provenance": {
+        "source": "https://i.imgflip.com/2odckz.jpg",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "disaster",
+          "label": "Marked safe from",
+          "placeholder": "Monday morning meetings",
+          "box": { "x": 20, "y": 252, "width": 578, "height": 100 },
+          "style": { "fontSize": 40, "minFontSize": 16, "color": "#1c1e21", "strokeWidth": 0, "uppercase": false, "maxLines": 2 }
+        }
+      ]
+    },
+    {
+      "id": "mocking-spongebob",
+      "name": "Mocking Spongebob",
+      "image": "templates/mocking-spongebob.jpg",
+      "thumbnail": "templates/thumbs/mocking-spongebob.jpg",
+      "width": 502,
+      "height": 353,
+      "provenance": {
+        "source": "https://i.imgflip.com/1otk96.jpg",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "top",
+          "label": "Top Text",
+          "placeholder": "Top Text",
+          "box": { "x": 20, "y": 11, "width": 462, "height": 64 },
+          "style": { "fontSize": 35, "minFontSize": 14, "strokeWidth": 2 }
+        },
+        {
+          "id": "bottom",
+          "label": "Bottom Text",
+          "placeholder": "Bottom Text",
+          "box": { "x": 20, "y": 278, "width": 462, "height": 64 },
+          "style": { "fontSize": 35, "minFontSize": 14, "strokeWidth": 2 }
+        }
+      ]
+    },
+    {
+      "id": "one-does-not-simply",
+      "name": "One Does Not Simply",
+      "image": "templates/one-does-not-simply.jpg",
+      "thumbnail": "templates/thumbs/one-does-not-simply.jpg",
+      "width": 568,
+      "height": 335,
+      "provenance": {
+        "source": "https://i.imgflip.com/1bij.jpg",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "top",
+          "label": "Top Text",
+          "placeholder": "Top Text",
+          "box": { "x": 23, "y": 10, "width": 522, "height": 60 },
+          "style": { "fontSize": 34, "minFontSize": 14, "strokeWidth": 2 }
+        },
+        {
+          "id": "bottom",
+          "label": "Bottom Text",
+          "placeholder": "Bottom Text",
+          "box": { "x": 23, "y": 265, "width": 522, "height": 60 },
+          "style": { "fontSize": 34, "minFontSize": 14, "strokeWidth": 2 }
+        }
+      ]
+    },
+    {
+      "id": "oprah-you-get-a",
+      "name": "Oprah You Get A",
+      "image": "templates/oprah-you-get-a.jpg",
+      "thumbnail": "templates/thumbs/oprah-you-get-a.jpg",
+      "width": 620,
+      "height": 464,
+      "provenance": {
+        "source": "https://i.imgflip.com/gtj5t.jpg",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "top",
+          "label": "Top Text",
+          "placeholder": "Top Text",
+          "box": { "x": 25, "y": 14, "width": 570, "height": 84 },
+          "style": { "fontSize": 46, "minFontSize": 18, "strokeWidth": 3 }
+        },
+        {
+          "id": "bottom",
+          "label": "Bottom Text",
+          "placeholder": "Bottom Text",
+          "box": { "x": 25, "y": 366, "width": 570, "height": 84 },
+          "style": { "fontSize": 46, "minFontSize": 18, "strokeWidth": 3 }
+        }
+      ]
+    },
+    {
+      "id": "running-away-balloon",
+      "name": "Running Away Balloon",
+      "image": "templates/running-away-balloon.jpg",
+      "thumbnail": "templates/thumbs/running-away-balloon.jpg",
+      "width": 761,
+      "height": 1024,
+      "provenance": {
+        "source": "https://i.imgflip.com/261o3j.jpg",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "top-guy",
+          "label": "Top: guy",
+          "placeholder": "Me",
+          "box": { "x": 20, "y": 335, "width": 320, "height": 150 },
+          "style": { "fontSize": 56, "minFontSize": 20, "strokeWidth": 3, "maxLines": 3 }
+        },
+        {
+          "id": "top-balloon",
+          "label": "Top: balloon",
+          "placeholder": "My goals",
+          "box": { "x": 492, "y": 105, "width": 250, "height": 210 },
+          "style": { "fontSize": 60, "minFontSize": 20, "color": "#111111", "strokeWidth": 0, "maxLines": 4 }
+        },
+        {
+          "id": "bottom-blob",
+          "label": "Bottom: pink blob",
+          "placeholder": "Distractions",
+          "box": { "x": 8, "y": 755, "width": 200, "height": 135 },
+          "style": { "fontSize": 50, "minFontSize": 18, "strokeWidth": 3, "maxLines": 3 }
+        },
+        {
+          "id": "bottom-guy",
+          "label": "Bottom: guy",
+          "placeholder": "Me",
+          "box": { "x": 232, "y": 785, "width": 220, "height": 115 },
+          "style": { "fontSize": 50, "minFontSize": 18, "strokeWidth": 3, "maxLines": 3 }
+        },
+        {
+          "id": "bottom-balloon",
+          "label": "Bottom: balloon",
+          "placeholder": "My goals",
+          "box": { "x": 616, "y": 615, "width": 138, "height": 185 },
+          "style": { "fontSize": 50, "minFontSize": 18, "color": "#111111", "strokeWidth": 0, "maxLines": 4 }
+        }
+      ]
+    },
+    {
+      "id": "sad-pablo-escobar",
+      "name": "Sad Pablo Escobar",
+      "image": "templates/sad-pablo-escobar.jpg",
+      "thumbnail": "templates/thumbs/sad-pablo-escobar.jpg",
+      "width": 720,
+      "height": 709,
+      "provenance": {
+        "source": "https://i.imgflip.com/1c1uej.jpg",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "top",
+          "label": "Top panel",
+          "placeholder": "Waiting for the build to finish",
+          "box": { "x": 15, "y": 238, "width": 690, "height": 104 },
+          "style": { "fontSize": 52, "minFontSize": 20, "strokeWidth": 3, "verticalAlign": "bottom" }
+        },
+        {
+          "id": "bottom-left",
+          "label": "Bottom-left panel",
+          "placeholder": "Still waiting",
+          "box": { "x": 10, "y": 598, "width": 336, "height": 102 },
+          "style": { "fontSize": 42, "minFontSize": 16, "strokeWidth": 3, "verticalAlign": "bottom" }
+        },
+        {
+          "id": "bottom-right",
+          "label": "Bottom-right panel",
+          "placeholder": "Build failed",
+          "box": { "x": 372, "y": 598, "width": 338, "height": 102 },
+          "style": { "fontSize": 42, "minFontSize": 16, "strokeWidth": 3, "verticalAlign": "bottom" }
+        }
+      ]
+    },
+    {
+      "id": "squidward-window",
+      "name": "Squidward window",
+      "image": "templates/squidward-window.jpg",
+      "thumbnail": "templates/thumbs/squidward-window.jpg",
+      "width": 598,
+      "height": 420,
+      "provenance": {
+        "source": "https://i.imgflip.com/145qvv.jpg",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "top",
+          "label": "Top Text",
+          "placeholder": "Top Text",
+          "box": { "x": 24, "y": 13, "width": 550, "height": 76 },
+          "style": { "fontSize": 42, "minFontSize": 17, "strokeWidth": 2 }
+        },
+        {
+          "id": "bottom",
+          "label": "Bottom Text",
+          "placeholder": "Bottom Text",
+          "box": { "x": 24, "y": 331, "width": 550, "height": 76 },
+          "style": { "fontSize": 42, "minFontSize": 17, "strokeWidth": 2 }
+        }
+      ]
+    },
+    {
+      "id": "theyre-the-same-picture",
+      "name": "They're The Same Picture",
+      "image": "templates/theyre-the-same-picture.jpg",
+      "thumbnail": "templates/thumbs/theyre-the-same-picture.jpg",
+      "width": 1363,
+      "height": 1524,
+      "provenance": {
+        "source": "https://imgflip.com/s/meme/Theyre-The-Same-Picture.jpg",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "picture-1",
+          "label": "Left picture",
+          "placeholder": "Thing one",
+          "box": { "x": 170, "y": 140, "width": 420, "height": 300, "rotation": 7 },
+          "style": { "fontSize": 80, "minFontSize": 30, "color": "#111111", "strokeWidth": 0, "uppercase": false, "maxLines": 4 }
+        },
+        {
+          "id": "picture-2",
+          "label": "Right picture",
+          "placeholder": "Thing two",
+          "box": { "x": 835, "y": 225, "width": 440, "height": 300, "rotation": 8 },
+          "style": { "fontSize": 80, "minFontSize": 30, "color": "#111111", "strokeWidth": 0, "uppercase": false, "maxLines": 4 }
+        }
+      ]
+    },
+    {
+      "id": "trade-offer",
+      "name": "Trade Offer",
+      "image": "templates/trade-offer.jpg",
+      "thumbnail": "templates/thumbs/trade-offer.jpg",
+      "width": 607,
+      "height": 794,
+      "provenance": {
+        "source": "https://i.imgflip.com/54hjww.jpg",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "i-receive",
+          "label": "I receive",
+          "placeholder": "Your fries",
+          "box": { "x": 10, "y": 185, "width": 280, "height": 105 },
+          "style": { "fontSize": 44, "minFontSize": 14, "strokeWidth": 2, "verticalAlign": "top", "maxLines": 3 }
+        },
+        {
+          "id": "you-receive",
+          "label": "You receive",
+          "placeholder": "My friendship",
+          "box": { "x": 317, "y": 185, "width": 280, "height": 105 },
+          "style": { "fontSize": 44, "minFontSize": 14, "strokeWidth": 2, "verticalAlign": "top", "maxLines": 3 }
+        }
+      ]
+    },
+    {
+      "id": "two-buttons",
+      "name": "Two Buttons",
+      "image": "templates/two-buttons.jpg",
+      "thumbnail": "templates/thumbs/two-buttons.jpg",
+      "width": 600,
+      "height": 908,
+      "provenance": {
+        "source": "https://i.imgflip.com/1g8my4.jpg",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "left-button",
+          "label": "Left button",
+          "placeholder": "Sleep early",
+          "box": { "x": 63, "y": 105, "width": 170, "height": 60, "rotation": -10 },
+          "style": { "fontSize": 32, "minFontSize": 11, "color": "#111111", "strokeWidth": 0, "maxLines": 2 }
+        },
+        {
+          "id": "right-button",
+          "label": "Right button",
+          "placeholder": "One more episode",
+          "box": { "x": 280, "y": 84, "width": 136, "height": 40, "rotation": -7 },
+          "style": { "fontSize": 28, "minFontSize": 10, "color": "#111111", "strokeWidth": 0, "maxLines": 2 }
+        },
+        {
+          "id": "person",
+          "label": "Sweating person",
+          "placeholder": "Me at 2am",
+          "box": { "x": 40, "y": 782, "width": 520, "height": 76 },
+          "style": { "fontSize": 46, "minFontSize": 14, "strokeWidth": 2 }
+        }
+      ]
+    },
+    {
+      "id": "uno-draw-25-cards",
+      "name": "UNO Draw 25 Cards",
+      "image": "templates/uno-draw-25-cards.jpg",
+      "thumbnail": "templates/thumbs/uno-draw-25-cards.jpg",
+      "width": 500,
+      "height": 494,
+      "provenance": {
+        "source": "https://i.imgflip.com/3lmzyx.jpg",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "card",
+          "label": "Card challenge",
+          "placeholder": "Admit you were wrong",
+          "box": { "x": 60, "y": 168, "width": 178, "height": 84 },
+          "style": { "fontSize": 30, "minFontSize": 12, "color": "#111111", "strokeWidth": 0, "uppercase": false, "maxLines": 4 }
+        },
+        {
+          "id": "person",
+          "label": "Person",
+          "placeholder": "Me",
+          "box": { "x": 258, "y": 205, "width": 236, "height": 75 },
+          "style": { "fontSize": 34, "minFontSize": 13, "strokeWidth": 2 }
+        }
+      ]
+    },
+    {
+      "id": "waiting-skeleton",
+      "name": "Waiting Skeleton",
+      "image": "templates/waiting-skeleton.jpg",
+      "thumbnail": "templates/thumbs/waiting-skeleton.jpg",
+      "width": 298,
+      "height": 403,
+      "provenance": {
+        "source": "https://i.imgflip.com/2fm6x.jpg",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "top",
+          "label": "Top Text",
+          "placeholder": "Top Text",
+          "box": { "x": 12, "y": 12, "width": 274, "height": 73 },
+          "style": { "fontSize": 30, "minFontSize": 12, "strokeWidth": 2 }
+        },
+        {
+          "id": "bottom",
+          "label": "Bottom Text",
+          "placeholder": "Bottom Text",
+          "box": { "x": 12, "y": 318, "width": 274, "height": 73 },
+          "style": { "fontSize": 30, "minFontSize": 12, "strokeWidth": 2 }
+        }
+      ]
+    },
+    {
+      "id": "woman-yelling-at-cat",
+      "name": "Woman Yelling At Cat",
+      "image": "templates/woman-yelling-at-cat.jpg",
+      "thumbnail": "templates/thumbs/woman-yelling-at-cat.jpg",
+      "width": 680,
+      "height": 438,
+      "provenance": {
+        "source": "https://i.imgflip.com/345v97.jpg",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "woman",
+          "label": "Woman",
+          "placeholder": "You said you'd be ready in 5 minutes!",
+          "box": { "x": 12, "y": 6, "width": 316, "height": 86 },
+          "style": { "fontSize": 36, "minFontSize": 14, "color": "#111111", "strokeWidth": 0, "maxLines": 3 }
+        },
+        {
+          "id": "cat",
+          "label": "Cat",
+          "placeholder": "I said I'd be ready",
+          "box": { "x": 352, "y": 6, "width": 316, "height": 86 },
+          "style": { "fontSize": 36, "minFontSize": 14, "color": "#111111", "strokeWidth": 0, "maxLines": 3 }
+        }
+      ]
+    },
+    {
+      "id": "x-x-everywhere",
+      "name": "X, X Everywhere",
+      "image": "templates/x-x-everywhere.jpg",
+      "thumbnail": "templates/thumbs/x-x-everywhere.jpg",
+      "width": 2048,
+      "height": 1392,
+      "provenance": {
+        "source": "https://i.imgflip.com/1ihzfe.jpg",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "top",
+          "label": "Top Text",
+          "placeholder": "Top Text",
+          "box": { "x": 82, "y": 42, "width": 1884, "height": 251 },
+          "style": { "fontSize": 139, "minFontSize": 56, "strokeWidth": 8 }
+        },
+        {
+          "id": "bottom",
+          "label": "Bottom Text",
+          "placeholder": "Bottom Text",
+          "box": { "x": 82, "y": 1099, "width": 1884, "height": 251 },
+          "style": { "fontSize": 139, "minFontSize": 56, "strokeWidth": 8 }
+        }
+      ]
+    },
+    {
+      "id": "yall-got-any-more-of-that",
+      "name": "Y'all Got Any More Of That",
+      "image": "templates/yall-got-any-more-of-that.jpg",
+      "thumbnail": "templates/thumbs/yall-got-any-more-of-that.jpg",
+      "width": 600,
+      "height": 471,
+      "provenance": {
+        "source": "https://i.imgflip.com/21uy0f.jpg",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "top",
+          "label": "Top Text",
+          "placeholder": "Top Text",
+          "box": { "x": 24, "y": 14, "width": 552, "height": 85 },
+          "style": { "fontSize": 47, "minFontSize": 19, "strokeWidth": 3 }
+        },
+        {
+          "id": "bottom",
+          "label": "Bottom Text",
+          "placeholder": "Bottom Text",
+          "box": { "x": 24, "y": 372, "width": 552, "height": 85 },
+          "style": { "fontSize": 47, "minFontSize": 19, "strokeWidth": 3 }
+        }
+      ]
+    },
+    {
+      "id": "you-guys-are-getting-paid",
+      "name": "You Guys are Getting Paid",
+      "image": "templates/you-guys-are-getting-paid.png",
+      "thumbnail": "templates/thumbs/you-guys-are-getting-paid.jpg",
+      "width": 520,
+      "height": 358,
+      "provenance": {
+        "source": "https://i.imgflip.com/2xscjb.png",
+        "license": "Unknown",
+        "attribution": null
+      },
+      "fields": [
+        {
+          "id": "top",
+          "label": "Top Text",
+          "placeholder": "Top Text",
+          "box": { "x": 21, "y": 11, "width": 478, "height": 64 },
+          "style": { "fontSize": 36, "minFontSize": 14, "strokeWidth": 2 }
+        },
+        {
+          "id": "bottom",
+          "label": "Bottom Text",
+          "placeholder": "Bottom Text",
+          "box": { "x": 21, "y": 283, "width": 478, "height": 64 },
+          "style": { "fontSize": 36, "minFontSize": 14, "strokeWidth": 2 }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,551 @@
+/* The caption font ('MemeFont', §4.4) is registered from JS in two subsets
+   (src/lib/fonts.ts). The masthead uses this tiny subset of just its own capitals,
+   which Vite inlines as a data URI so the title paints without a font request. */
+@font-face {
+  font-family: 'MemeTitle';
+  src: url('./assets/fonts/anton-title.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+:root {
+  color-scheme: light dark;
+  --bg: #f7f1e7;
+  --surface: #fffaf2;
+  --text: #2b1d14;
+  --muted: #6f5a4a;
+  --border: #e2d5c3;
+  --accent: #b8471a;
+  --accent-text: #ffffff;
+  --warn: #9a4a00;
+  --error-bg: #a32020;
+  --focus: #1d6fd6;
+  --shadow: 0 2px 10px rgb(43 29 20 / 0.12);
+  --radius: 12px;
+  --gutter: 16px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #17110d;
+    --surface: #241a14;
+    --text: #f3e9dc;
+    --muted: #b9a693;
+    --border: #3d2f25;
+    --accent: #e3713a;
+    --accent-text: #1a0f08;
+    --warn: #ffb36b;
+    --error-bg: #c0392b;
+    --focus: #7db4ff;
+    --shadow: 0 2px 12px rgb(0 0 0 / 0.5);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+
+[tabindex='-1']:focus {
+  outline: none;
+}
+
+a {
+  color: var(--accent);
+}
+
+/* ---------- Shared controls ---------- */
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 56px;
+  padding: 6px 8px;
+  padding-top: calc(6px + env(safe-area-inset-top));
+  border-bottom: 1px solid var(--border);
+}
+
+.topbar__title {
+  margin: 0;
+  font-family: 'MemeFont', system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 1.45rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.icon-button {
+  flex: none;
+  display: inline-grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.icon-button:active {
+  background: var(--border);
+}
+
+.icon-button svg {
+  width: 26px;
+  height: 26px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.button {
+  flex: 1 1 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 48px;
+  padding: 0 12px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  font-weight: 650;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.button--primary {
+  flex-grow: 1.5;
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--accent-text);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.button:not(:disabled):active {
+  transform: scale(0.98);
+}
+
+.button__icon {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ---------- Template grid ---------- */
+
+.masthead {
+  padding: calc(24px + env(safe-area-inset-top)) var(--gutter) 16px;
+  text-align: center;
+}
+
+.masthead__title {
+  margin: 0;
+  font-family: 'MemeTitle', 'MemeFont', system-ui, sans-serif;
+  font-weight: 400;
+  font-size: clamp(2.2rem, 9vw, 3.4rem);
+  line-height: 1;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.masthead__title span {
+  display: block;
+  color: var(--accent);
+  font-size: 0.6em;
+  letter-spacing: 0.12em;
+}
+
+.grid {
+  list-style: none;
+  margin: 0;
+  padding: 0 var(--gutter);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+}
+
+.tile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  overflow: hidden;
+  color: inherit;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+
+.tile:active {
+  transform: scale(0.98);
+}
+
+.tile__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  background: var(--border);
+}
+
+.tile__name {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 8px 12px;
+  font-weight: 650;
+}
+
+.footer {
+  padding: 24px var(--gutter) calc(24px + env(safe-area-inset-bottom));
+  color: var(--muted);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin: 0 0 4px;
+}
+
+/* ---------- Editor ---------- */
+
+.editor__preview {
+  padding: 12px var(--gutter) 8px;
+  background: var(--bg);
+}
+
+.preview {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.preview__canvas {
+  display: block;
+  max-width: 100%;
+  max-height: 65svh;
+  width: auto;
+  height: auto;
+  border-radius: 6px;
+  background: var(--border);
+  box-shadow: var(--shadow);
+}
+
+.preview__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
+  text-align: center;
+}
+
+.preview__overlay--error {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.preview__overlay--error .button {
+  flex: none;
+  min-width: 140px;
+}
+
+.spinner {
+  width: 36px;
+  height: 36px;
+  border: 4px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner {
+    animation-duration: 3s;
+  }
+}
+
+.editor__panel {
+  padding: 0 var(--gutter);
+}
+
+.editor__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-top: 8px;
+}
+
+.caption-field__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.caption-field__label {
+  display: block;
+  font-weight: 650;
+  font-size: 0.95rem;
+}
+
+.caption-field__input {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  /* 4 rows, then scroll */
+  max-height: calc(4 * 1.35em + 24px);
+  padding: 10px 12px;
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  font-size: max(16px, 1rem); /* ≥16px: no zoom-on-focus */
+  line-height: 1.35;
+  resize: none;
+  overflow-y: auto;
+}
+
+.caption-field__input::placeholder {
+  color: var(--muted);
+  opacity: 0.8;
+}
+
+.caption-field__input:focus {
+  border-color: var(--accent);
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 30%, transparent);
+}
+
+.caption-field__note {
+  margin: 4px 0 0;
+  color: var(--warn);
+  font-size: 0.85rem;
+}
+
+.actions {
+  position: sticky;
+  bottom: 0;
+  z-index: 3;
+  display: flex;
+  gap: 8px;
+  margin: 16px calc(-1 * var(--gutter)) 0;
+  padding: 12px var(--gutter) calc(12px + env(safe-area-inset-bottom));
+  border-top: 1px solid var(--border);
+  background: var(--bg);
+}
+
+/* Compact mode: touch devices while a caption has focus (§3.3).
+   The preview pins to the top at ≤30svh; the action bar is hidden; extra
+   bottom space lets the page scroll instead of panning the visual viewport. */
+.editor--compact .editor__preview {
+  position: sticky;
+  top: 0;
+  z-index: 4;
+  padding: 6px var(--gutter);
+  box-shadow: var(--shadow);
+}
+
+.editor--compact .preview__canvas {
+  max-height: 30svh;
+  box-shadow: none;
+}
+
+.editor--compact .actions {
+  display: none;
+}
+
+/* "Done" on the focused field's label row: always on screen, between the
+   pinned preview and the keyboard. Negative margins keep the row's height;
+   the ::before extends the tap target to 44px without crowding the input. */
+.caption-field__done {
+  position: relative;
+  display: none;
+  min-height: 30px;
+  margin: -4px 0;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--accent-text);
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.caption-field__done::before {
+  content: '';
+  position: absolute;
+  inset: -7px -4px;
+}
+
+.editor--compact .caption-field:focus-within .caption-field__done {
+  display: inline-flex;
+  align-items: center;
+}
+
+.editor--compact .editor__body {
+  padding-bottom: 70vh;
+}
+
+@media (min-width: 900px) {
+  .editor__body {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(320px, 1fr);
+    gap: 32px;
+    align-items: start;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+
+  .editor__preview {
+    position: sticky;
+    top: 16px;
+    padding: 0;
+  }
+
+  .preview__canvas {
+    max-height: calc(100vh - 120px);
+  }
+
+  .editor__panel {
+    padding: 0;
+  }
+
+  .actions {
+    position: static;
+    margin: 24px 0 0;
+    padding: 0;
+    border: 0;
+    background: none;
+  }
+}
+
+/* ---------- Toast / live region ---------- */
+
+.toast-region {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: calc(88px + env(safe-area-inset-bottom));
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  padding: 0 var(--gutter);
+  pointer-events: none;
+}
+
+.toast {
+  max-width: 480px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: var(--text);
+  color: var(--bg);
+  font-weight: 650;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.toast--error {
+  border-radius: var(--radius);
+  background: var(--error-bg);
+  color: #fff;
+}
+
+@media (min-width: 900px) {
+  .toast-region {
+    bottom: 24px;
+  }
+}
+
+/* ---------- Errors ---------- */
+
+.error-screen {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 8px var(--gutter) calc(32px + env(safe-area-inset-bottom));
+}
+
+.error-screen {
+  padding-top: calc(48px + env(safe-area-inset-top));
+}
+
+.error-screen h1 {
+  margin: 0 0 8px;
+}
+
+.error-screen .button {
+  flex: none;
+  margin-top: 16px;
+  padding: 0 24px;
+}
